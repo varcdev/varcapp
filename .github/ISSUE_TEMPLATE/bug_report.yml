@@ -1,0 +1,74 @@
+name: Bug report
+description: Report a reproducible problem in Varc
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please remove passwords,
+        tokens, connection strings, private keys, and private data before
+        submitting logs or screenshots.
+
+  - type: input
+    id: version
+    attributes:
+      label: Varc version
+      description: Which version of Varc are you using?
+      placeholder: "For example: 0.4.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell us exactly what you did, including the smallest example that shows the problem.
+      placeholder: |
+        1. Open...
+        2. Connect to...
+        3. Choose...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include any visible error message.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and screenshots
+      description: Paste redacted logs or drag in screenshots if they help explain the issue.
+      render: text
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add anything else that may help us investigate.

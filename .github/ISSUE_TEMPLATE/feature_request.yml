@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest an improvement or new capability for Varc
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Varc. Please search existing issues first
+        so related ideas can be discussed together.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What problem or limitation would this request address?
+      placeholder: Tell us what you are trying to do and what is difficult today.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change you would like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches, workarounds, or tools have you tried?
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add examples, screenshots, or other context that would help explain the request.
